@@ -1,0 +1,71 @@
+article h1 {
+  padding-top: 40px;
+  text-align: center;
+  margin: auto;
+  width: 281px;
+  height: 30px;
+  left: 660px;
+  top: 688px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #b7dc16;
+}
+
+article p {
+  text-align: center;
+  margin: auto;
+  width: 480px;
+  height: 220px;
+  left: 547px;
+  top: 733px;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #005249;
+}
+
+.article button {
+  margin: auto;
+  width: 153px;
+  height: 45px;
+  left: 724px;
+  top: 1006px;
+
+  background: #b7dc16;
+  border-radius: 5px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #005249;
+  border: none;
+}
+.article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
