@@ -1,5 +1,9 @@
 import "../components/main.css";
+import Modal from "./modal";
+import { useState } from "react";
 const Main = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="article">
       <article>
@@ -17,7 +21,15 @@ const Main = () => {
           Get outside this year and get some fresh air and adventure.
         </p>
       </article>
-      <button>READ MORE</button>
+      <button
+        className="btn"
+        onClick={() => {
+          setModal(true);
+        }}
+      >
+        READ MORE
+      </button>
+      {modal && <Modal closeModal={setModal} />}
     </div>
   );
 };
