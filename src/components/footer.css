@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #4c8a40;
+  padding: 10px;
+}
+
+.text {
+  width: 289px;
+  height: 38px;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.footer .link {
+  margin-top: 8px;
+}
+
+.footer a {
+  margin-left: 25px;
+  width: 103px;
+  height: 18px;
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
