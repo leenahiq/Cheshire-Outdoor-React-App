@@ -1,11 +1,11 @@
 article h1 {
-  padding-top: 40px;
+  padding: 40px;
   text-align: center;
   margin: auto;
   width: 281px;
   height: 30px;
-  left: 660px;
-  top: 688px;
+  /* left: 660px;
+  top: 688px; */
 
   font-family: "Montserrat";
   font-style: normal;
@@ -24,9 +24,9 @@ article p {
   text-align: center;
   margin: auto;
   width: 480px;
-  height: 220px;
-  left: 547px;
-  top: 733px;
+  height: 160px;
+  /* left: 547px;
+  top: 733px; */
 
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -42,10 +42,12 @@ article p {
 
 .article button {
   margin: auto;
+  margin-top: -40px;
+  margin-bottom: 30px;
   width: 153px;
   height: 45px;
-  left: 724px;
-  top: 1006px;
+  /* left: 724px; */
+  /* top: 1006px; */
 
   background: #b7dc16;
   border-radius: 5px;
@@ -54,7 +56,7 @@ article p {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 14px;
+  /* line-height: 14px; */
 
   text-align: center;
   letter-spacing: 0.1em;
@@ -87,7 +89,7 @@ article p {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.366);
+  background-color: rgba(0, 0, 0, 0.47);
 }
 .modal-box h1 {
   text-align: center;
@@ -109,6 +111,7 @@ article p {
   z-index: 101;
   padding: 20px;
   color: #005249;
+  transition: all 0.5s ease-out;
 }
 
 .modal-box button {

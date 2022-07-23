@@ -1,12 +1,14 @@
 import "../components/navbar.css";
 import img1 from "../images/img1.png";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 const Navbar = () => {
   return (
     <div>
       <div className="email">
         <p> events@cheshire-outdoors.info</p>
       </div>
-      <div className="logo">
+      <div className="navbar">
         <img src={img1} alt="logo" />
 
         <div className="nav">
@@ -18,6 +20,11 @@ const Navbar = () => {
           <a href="/">Groups</a>
           <a href="/">Activities</a>
           <a href="/">Contact</a>
+          <div className="menu">
+            <FaTimes size="25" color="#1a6053" />
+
+            <FaBars size="25" color="#1a6053" />
+          </div>
         </div>
       </div>
     </div>
