@@ -101,6 +101,7 @@ article p {
 .modal-box {
   position: relative;
   top: 50%;
+  transition: top 0.5s ease-in;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 70%;
@@ -111,7 +112,8 @@ article p {
   z-index: 101;
   padding: 20px;
   color: #005249;
-  transition: 0.5s ease-in;
+
+  transition: top 0.5s ease-out;
 }
 
 .modal-box button {
