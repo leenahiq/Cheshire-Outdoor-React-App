@@ -37,12 +37,12 @@
 }
 .nav a {
   width: 72px;
-  height: 17px;
-  left: 950px;
+  /* height: 17px; */
+  /* left: 950px; */
 
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 17px;
   letter-spacing: -0.02em;
   margin: 20px;
@@ -63,7 +63,7 @@
     margin-top: 50px;
   }
   .navbar {
-    padding: 10px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -73,11 +73,11 @@
 
   .nav {
     position: absolute;
-    top: 20vh;
-    margin-left: 20px;
+    top: 16vh;
+    /* margin-left: 20px; */
     right: 0;
-    width: 95%;
-    height: 93vh;
+    width: 100%;
+    height: 80vh;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.354);
     color: #f1f9ef;
@@ -98,6 +98,7 @@
 /* Nav Active class */
 .nav_active {
   /* transform: translateX(0); */
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

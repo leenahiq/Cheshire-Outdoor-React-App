@@ -122,4 +122,7 @@ article p {
   .article p {
     width: 100%;
   }
+  .modal-box button {
+    width: 100%;
+  }
 }
