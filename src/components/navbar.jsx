@@ -1,8 +1,13 @@
+import { useState } from "react";
 import "../components/navbar.css";
 import img1 from "../images/img1.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const [active, setActive] = useState("nav");
+  const menuBar = () => {
+    active === "nav" ? setActive("nav nav_active") : setActive("nav");
+  };
   return (
     <div>
       <div className="email">
@@ -11,7 +16,7 @@ const Navbar = () => {
       <div className="navbar">
         <img src={img1} alt="logo" />
 
-        <div className="nav">
+        <div className={active}>
           <a href="/">
             <b>Home</b>
           </a>
@@ -20,11 +25,9 @@ const Navbar = () => {
           <a href="/">Groups</a>
           <a href="/">Activities</a>
           <a href="/">Contact</a>
-          <div className="menu">
-            <FaTimes size="25" color="#1a6053" />
-
-            <FaBars size="25" color="#1a6053" />
-          </div>
+        </div>
+        <div onClick={menuBar} className="menu">
+          <FaBars size="25" color="#1a6053" />
         </div>
       </div>
     </div>
