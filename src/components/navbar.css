@@ -74,20 +74,31 @@
   .nav {
     position: absolute;
     top: 20vh;
+    margin-left: 20px;
     right: 0;
-    width: 50%;
+    width: 95%;
     height: 93vh;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.354);
     color: #f1f9ef;
     flex-direction: column;
     align-items: center;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
+    display: none;
+    /* transform: translateX(100%); */
+    transition: 0.5s ease-out;
+    overflow-x: hidden;
+  }
+
+  .nav a:hover {
+    font-size: 20px;
+    transition: 0.2s ease-in;
   }
 }
 
 /* Nav Active class */
 .nav_active {
-  transform: translateX(0);
+  /* transform: translateX(0); */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
